@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>SVG：直線を描く</title> 
+</head> 
+<body>
+<h1>SVG：直線を描く</h1>
+<form>
+<input type="button" value="直線を描く" onclick="drawLine()" />
+</form>
+<script>
+function drawLine(){
+var svgArea = document.getElementById("mySVG");
+var svgText = '<svg width="320" height="240"><line x1="20" y1="5" x2="300" y2="180" stroke="#ff0000" stroke-width="10" /></svg>';
+svgArea.innerHTML = svgText;
+}
+</script>
+<div id="mySVG"></div>
+</body> 
+</html>
