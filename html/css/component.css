@@ -886,7 +886,6 @@ path.stroke-thin {
        -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 5px -6px 6px rgba(0,0,0,0.3) inset; 
-    background: url(../img/top_mini_6.svg) no-repeat 50% 45%;
     
 }
 .border-top{
