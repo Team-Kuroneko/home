@@ -735,19 +735,20 @@ path.stroke-thin {
 .sss{
 
 }
+/* Specify Swiper's Size: */
 .swiper-container{
-    width:100%;height:100%;color:#fff;text-align:left;
+    width:660px;height:400px;color:#fff;text-align:center;
 }
 .swiper-wrapper{
     padding-left: 0px; padding-right: 0px; padding-bottom: 10px;
-    width: 100%; height: 100%; 
+    width: 1500px; height: 400px; 
     transition: 0s;
     -webkit-transition: 0s; 
     transform: translate3d(0px, 0px, 0px); 
     -webkit-transform: translate3d(0px, 0px, 0px);
 }
 .swiper-slide{
-    padding-left: 0px; width:100%;height:100%;
+    width:500px;height:100%;
 }
 .red-slide{background:#ca4040;}
 .blue-slide{background:#4390ee;}
@@ -755,6 +756,16 @@ path.stroke-thin {
 .swiper-slide .title{
     font-style:italic;font-size:42px;margin-top:80px;margin-bottom:0;line-height:45px;
 }
+.pagination{
+    position: absolute;
+    z-index: 20;
+    left: 30px;bottom: 10px;
+}
+.swiper-pagination-switch{
+    display:inline-block;
+    width:8px;height:8px;border-radius:8px;background:#222;margin-right:5px;opacity:0.8;border:1px solid #fff;cursor:pointer;}
+.swiper-visible-switch{background:#aaa;}
+.swiper-active-switch{background:#fff;}
 .silver{
    width: 50%;
    background-repeat: no-repeat;
@@ -883,6 +894,7 @@ path.stroke-thin {
     text-align:right;
 }
 #Home{
+    
        -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
 box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 5px -6px 6px rgba(0,0,0,0.3) inset; 
