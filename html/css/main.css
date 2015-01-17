@@ -11,10 +11,13 @@
 }
 
 #content{
+    
+<!--    width:100%;-->
     margin-top: 0px;
     position: relative;
     z-index: 1;
 
+ 
 }
 
 section{
@@ -35,7 +38,7 @@ section.active{
 section > header {
     padding: 20px 20px 0 20px;
 }
-
+<!--セクション内のヘッダー-->
 section > header > h1{
     font-size: 22px;
     font-weight: normal;
@@ -102,4 +105,4 @@ section >  div{
 @keyframes         role { 0% {width: 0%;} 70%, 100% {width: 120%;} }
 @-moz-keyframes    role { 0% {width: 0%;} 70%, 100% {width: 120%;} }
 @-webkit-keyframes role { 0% {width: 0%;} 70%, 100% {width: 120%;} }
-        
+<!--ここから下はportfolioで使うcss byじゅん-->

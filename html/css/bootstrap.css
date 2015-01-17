@@ -59,9 +59,10 @@ strong {
 dfn {
   font-style: italic;
 }
+<!--もともとは２emでした-->
 h1 {
   margin: .67em 0;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 mark {
   color: #000;
@@ -441,9 +442,10 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
+<!--sectionの中では、h1をdivでくくると、この下のcssが適用される。h1 etcのサイズを変更するにはこの下をいじる。もとは36pxだったよ。-->
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 22px;
 }
 h2,
 .h2 {
@@ -738,7 +740,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-           
 }
 @media (min-width: 768px) {
   .container {
@@ -748,11 +749,13 @@ pre code {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+      
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+      
   }
 }
 .container-fluid {
@@ -4371,6 +4374,7 @@ a.list-group-item.active > .badge,
   padding: 0px;
   margin-bottom: 0px;
   color: inherit;
+    background-image: url(../img/star2.svg);
     background-color:#ffffff;
 }
 .jumbotron h1,

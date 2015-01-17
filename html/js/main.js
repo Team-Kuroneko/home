@@ -43,3 +43,6 @@ $('.keepout').each(function (index, element) {
         $(this).removeClass('keepout-anime');
     });
 });
+
+//portfolio用のscript
+
