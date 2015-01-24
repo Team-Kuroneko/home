@@ -4374,8 +4374,7 @@ a.list-group-item.active > .badge,
   padding: 0px;
   margin-bottom: 0px;
   color: inherit;
-    background-image: url(../img/star2.svg);
-    background-color:#ffffff;
+    background-color: #FFFFE0;
 }
 .jumbotron h1,
 .jumbotron .h1 {
