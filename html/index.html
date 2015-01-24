@@ -67,9 +67,9 @@
        
       <div class="container">
         <div class="header-counter">
-            
-            <P>Sign in</P>
-         
+            <!-- FC2カウンター ここから -->
+現在の閲覧者数:<script language="javascript" type="text/javascript" src="http://counter1.fc2.com/views.php?id=24149715&main=1"></script><noscript><img src="http://counter1.fc2.com/counter_now.php?id=24149715&main=1" /></noscript>
+<!-- FC2カウンター ここまで -->
         </div><!--/.navbar-collapse -->
 
            <div class="line-drawing" id="visible">
@@ -449,32 +449,38 @@
 
 <div class="container hide" id="content">
          <section id="Home" class="active">
-            <header>
-                <h1 class="rocks2">News</h1>
-           </header>             
-         
-
-            <div>
-                <p class="rocks2">
-                &nbsp;&nbsp;&nbsp;&nbsp;Home ページ　立ち上げました！2014/12/25
-                </p>
-                <div class="icon-font41" id="icon-play">
-      
+            <header></header>
+            <div id="contents">
+                <div>
+                    <h1 class="rocks2">News</h1>
+                    <p class="rocks2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;Home ページ　立ち上げました！2014/12/25
+                    </p>
+                    <div class="icon-font41" id="icon-play"></div>
+                </div>
+                <div>
+                    <h1 class="rocks2">Team くろねこ</h1>
+                    <p class="rocks2">
+                     &nbsp;&nbsp;&nbsp;&nbsp;Team くろねことは、ゲーム開発をしたいという熱い意志をもった集団である。                
+                    </p>
+                </div>
             </div>
-                
-                <h1 class="rocks2">Team くろねこ</h1>
-            <div>
-                <p class="rocks2">
-                 &nbsp;&nbsp;&nbsp;&nbsp;Team くろねことは、ゲーム開発をしたいという熱い意志をもった集団である。                
-                </p>
+            
+            <div id="sidebar">
+                <div id="side1">
+                    <a class="twitter-timeline" href="https://twitter.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0%E5%88%B6%E4%BD%9C" data-widget-id="555784563423584256">#ゲーム制作 のツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                <div id="side2">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/pages/チームクロネコ/845465278849891" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+                </div>
             </div>
 
-            <footer>
-       <div class="footer-since">
-            <P class="rocks2">
-                &nbsp;&nbsp;Since 2014
-           </P>
-        </div><!--/.navbar-collapse -->
+            <footer id="footer">
+                <div class="footer-since">
+                    <P class="rocks2">
+                    &nbsp;&nbsp;Since 2014
+                    </P>
+                </div><!--/.navbar-collapse -->
              </footer>
         <!-- / #page1 --></section>
             <section id="team">
@@ -698,7 +704,16 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.inview.min.js"></script>
-       
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
         <script>
           if(document.createElementNS
             && document.createElementNS("http://www.w3.org/2000/svg", "svg").viewBox){
