@@ -736,6 +736,11 @@ max-width: 100px;
    height: auto;
 
 }
+img.zyun:hover{
+max-width: 300px;
+   height: auto;
+z-index: 0;
+}
 
 .zyun-channel{
     background-color: white;
