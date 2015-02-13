@@ -53,12 +53,12 @@ a, button {
 /* Hover effect for the whole navigation to make the hovered item stand out */
 
 .no-touch .nav ul:hover a {
-	color: rgba(249, 249, 249, .8);
+	color: gray;
 }
 
 .no-touch .nav ul li:nth-child(6n+1):hover a:hover {
     
-    color: white;
+    color: brown;
 
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
@@ -71,7 +71,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 }
 .no-touch .nav ul li:nth-child(6n+2):hover a:hover {
-    color: white;
+    color: brown;
 
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
@@ -83,7 +83,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0 36px red;
 }
 .no-touch .nav ul li:nth-child(6n+3):hover a:hover {
-    color: white;
+    color: brown;
 
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
@@ -96,7 +96,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 }
 .no-touch .nav ul li:nth-child(6n+4):hover a:hover {
-    color: white;
+    color: brown;
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
   0 0  8px #fff,
@@ -107,7 +107,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0 36px rgb(173, 255, 103);
 }
 .no-touch .nav ul li:nth-child(6n+5):hover a:hover {
-    color: white;
+    color: black;
     
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
@@ -120,7 +120,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 }
 .no-touch .nav ul li:nth-child(6n+6):hover a:hover {
-    color: white;
+    color: purple;
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
   0 0  8px #fff,
@@ -179,6 +179,34 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 /* For screen bigger than 800px */
 @media (min-width: 50em) {
+       .line-drawing{
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	position: relative;
+	margin: 0 auto 0px;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background-color:white;
+     -moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  box-shadow:0 0 0px 1px rgba(255,255,255,1.0) inset;
+}
+.codrops-logo {
+	position: relative;
+	margin: 0 auto;
+    padding-bottom: 48.7%;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background: url(../img/top_14.svg) no-repeat 50% 50%;
+    background-color: #ffffff;
+    
+ -moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(0,0,0,1.0) inset;
+
+}
 
 	/* Transforms the list into a horizontal navigation */
 	.nav li {
@@ -401,7 +429,38 @@ background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparen
 
 /* CSS specific to the 2x3 columns version */
 @media (min-width:32.5em) and (max-width: 49.938em) {
-	
+    .movingUpmenu{
+margin-top: 20px;
+    }
+       .line-drawing{
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	position: relative;
+	margin: 0 auto 0px;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background-color:white;
+     -moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  box-shadow:0 0 0px 1px rgba(255,255,255,1.0) inset;
+}
+	.codrops-logo {
+	position: relative;
+	margin: 0 auto;
+    padding-bottom: 48.7%;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background: url(../img/top_14.svg) no-repeat 50% 50%;
+    background-color: #ffffff;
+    
+ -moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(0,0,0,1.0) inset;
+
+}
+
 	/* Creating the 2 column layout using floating elements once again */
 	.nav li {
 		display: block;
@@ -495,7 +554,7 @@ box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) ins
 
 /* Adapting the font size and width for smaller screns*/
 @media (min-width: 32.5em) and (max-width: 38.688em) {
-	
+
 	.nav li span.icon {
 		width: 50%;
 	}
@@ -533,6 +592,30 @@ box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) ins
 }
 
 @media (max-width: 32.438em) {
+    .line-drawing{
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	position: relative;
+	margin: 0 auto 0px;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background-color:white;
+ 
+  box-shadow:0 0 0px 1px rgba(255,255,255,1.0) inset;
+}
+
+	.codrops-logo {
+	position: relative;
+	margin: 0 auto;
+    padding-bottom: 48.7%;
+	viewBox: 0 0 1368.906 661.151; 
+    preserveAspectRatio: xMidYMid meet;
+    background: url(../img/top_14.svg) no-repeat 50% 50%;
+    background-color: #ffffff;
+    
+  box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 5px rgba(0,0,0,1.0) inset;
+
+}
 
 	/* Unhiding the styled menu link */
 	.nav .navtoogle{
@@ -629,19 +712,6 @@ svg {
 	opacity: 0;
 }
 
-.line-drawing{
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-	position: relative;
-	margin: 0 auto 0px;
-	viewBox: 0 0 1366 659; 
-    preserveAspectRatio: xMidYMid meet;
-    background-color:white;
-     -moz-border-radius: 100px / 50px;
-	-webkit-border-radius: 100px / 50px;
-	border-radius: 100px / 50px;
-  box-shadow:0 0 0px 1px rgba(255,255,255,1.0) inset;
-}
 
 .line-drawing path {
 	fill: none;
@@ -668,22 +738,6 @@ path.stroke-thin {
 	transition: opacity 0.5s;
 }
 
-.codrops-logo {
-	position: relative;
-	margin: 0 auto 0;
-    padding-bottom: 48.7%;
-	viewBox: 0 0 1366 659; 
-    preserveAspectRatio: xMidYMid meet;
-    background: url(../img/top2.svg) no-repeat 50% 50%;
-    background-color: #ffffff;
-    
- -moz-border-radius: 100px / 50px;
-	-webkit-border-radius: 100px / 50px;
-	border-radius: 100px / 50px;
-  box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset,0 0 0px 1px rgba(0,0,0,1.0) inset;
-<!--   box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 10px rgba(0,0,0,1.0) inset; -->
-
-}
 
 
 /* test */
@@ -732,14 +786,25 @@ background-image: linear-gradient(120deg, rgba(0,0, 0, 0.5) 50%, transparent 0%)
 
 }
 img.zyun{
-max-width: 100px;
-   height: auto;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 1000;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 
 }
 img.zyun:hover{
-max-width: 300px;
-   height: auto;
-z-index: 0;
+    position: relative;
+    z-index: 1000;
+    height: auto;
+-webkit-transform:translate(50px,50px) scale(2);
+    -moz-transform:translate(50px,50px) scale(2);
+    -o-transform:translate(50px,50px) scale(2);
+    -ms-transform:translate(50px,50px) scale(2);
+    transform:translate(50px,50px) scale(2);
 }
 
 .zyun-channel{
@@ -836,7 +901,6 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 }
 .movingUpmenu{
-
 -moz-animation-name: fadeInLoad;
  -moz-animation-duration: 3s;
  -moz-animation-timing-function: ease-in;
@@ -971,8 +1035,10 @@ padding-left50:50px;
 
 }
 #service{
+    margin-top: 20px;
 height: 320px;
 border-radius:8px;
+    color:white;
     background-image: url(../img/maintanace.png);
 background-repeat: repeat;
 
@@ -1362,6 +1428,47 @@ box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) ins
 }
 }
 
+
+
+@-moz-keyframes bg {
+ 0% {
+background-image:url(../img/star.svg);
+ }
+ 100% {
+background-image:url(../img/star2.svg);
+     
+ }
+ }
+
+ @-webkit-keyframes bg {
+ 0% {
+background-image:url(../img/star.svg);
+ }
+ 100% {
+background-image:url(../img/star2.svg);
+     
+ }
+ }
+
+ @-o-keyframes bg {
+ 0% {
+background-image:url(../img/star.svg);
+ }
+ 100% {
+background-image:url(../img/star2.svg);
+     
+ }
+ }
+
+ @-ms-keyframes bg {
+ 0% {
+background-image:url(../img/star.svg);
+ }
+ 100% {
+background-image:url(../img/star2.svg);
+     
+ }
+ }
 
 /* Positions */
 #logo { 
