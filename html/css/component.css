@@ -1487,37 +1487,160 @@ background-image:url(../img/star2.svg);
 	}
 }
 
-#sidebar {
-    width: 500px;
-    float: right;
-    margin: 0px;
-    padding: 0px;
-}
-
 #contents {
-    width: 600px;
+    width: 60%;
     float: left;
     margin: 0px;
     padding: 0px;
 }
-
+#sidebar {
+    width: 40%;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
 #footer {
+    width: 30%;
     text-align: center;
     clear: both;
 }
-
 #side1 {
-    width: 250px;
+    width: 50%;
     float: left;
     margin: 0px;
     padding: 0px;
 }
-
 #side2 {
-    width: 250px;
+    width: 50%;
     float: right;
     margin: 0px;
     padding: 0px;
+}
+
+@media (min-width: 50em) {
+    #contents {
+        width: 60%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    #sidebar {
+        width: 40%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+    }
+    #footer {
+    width: 30%;
+        text-align: center;
+        clear: both;
+    }
+    #side1 {
+        width: 50%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    #side2 {
+        width: 50%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+    }
+}@media (min-width: 50em) and (max-width: 61.250em) {
+    #contents {
+        width: 70%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    #sidebar {
+        width: 30%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+    }
+    #footer {
+        text-align: center;
+        clear: both;
+    }
+    #side1 {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    #side2 {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0px;
+        padding: 0px;
+    }
+/* The "tablet" and "mobile" version */
+} @media (max-width: 49.938em) {
+    #contents {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0px;
+        padding-left: 10px;
+    }
+    #footer {
+        text-align: center;
+        clear: both;
+    }
+    #side1 {
+        width: 48%;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+    #side2 {
+        width: 48%;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+    }
+/* CSS specific to the 2x3 columns version */
+} @media (min-width:32.5em) and (max-width: 49.938em) {
+/* Adapting the font size and width for smaller screns*/
+} @media (min-width: 32.5em) and (max-width: 38.688em) {
+} @media (max-width: 32.438em) {
+    #contents {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin: 0px;
+        padding-left: 10px;
+    }
+    #footer {
+        text-align: center;
+        clear: both;
+    }
+    #side1 {
+        width: 95%;
+        float: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    #side2 {
+        width: 95%;
+        float: none;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 .fbcomments,
