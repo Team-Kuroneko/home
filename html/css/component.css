@@ -819,9 +819,8 @@ img.zyun:hover{
 
 }
 .master-channel{
-    background-color: #ff8604;
-        border-radius: 39px; 
-
+    background-color: none;
+    border-radius: 39px; 
 }
 
 .rocks{
