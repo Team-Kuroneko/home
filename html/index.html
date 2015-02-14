@@ -565,6 +565,24 @@
             </header>
                 
             <div class="main-container">
+                          <div class="pagination">
+           
+                </div>
+                <div class="swiper-container5">
+               <div class="swiper-wrapper">
+                                        <div class="swiper-slide blue-slide master-channel">
+                    
+                    </div>
+
+                    <div class="swiper-slide red-slide gin-channel">
+                    
+                    </div>
+                    
+                    <div class="swiper-slide orange-slide zyun-channel">
+                        
+                    </div>
+                </div>
+                </div>
                 <div class="swiper-container1">
                 <div class="swiper-wrapper">
                                         <div class="swiper-slide master-channel">
@@ -661,9 +679,7 @@
                     
 
                 </div>
-                     <div class="pagination">
            
-                </div>
                 </div>
                 </div>
             </div><!-- sectionおわりのdiv -->
@@ -671,17 +687,16 @@
         <!-- / #vol2 --></section>
 
         <section id="service">
-            <header>
-                <h1>Services</h1>
+           <header>
+                <h1 class="rocks">Services</h1>
             </header>
             <div>
-                <p>
-                    COMING SOON.<br>
-                    9/20 公開予定
+                <p class="rocks">
+                    メンテナンス中！<br>
+                    しばらくお待ちください。
                 </p>
             </div>
-                    
-
+            
         <!-- / #vol3    --></section>
         <section id="portfolio">
             <header>
@@ -950,6 +965,9 @@ $(window).resize(function(){
   fixSwiperHeight()
 })
 
+           onSlideClick:function(swiper){
+mySwiper5.swipeTo(mySwiper5.activeLoopIndex);
+}
 
 Or with jQuery/Zepto
 
@@ -994,7 +1012,14 @@ mySwiper4.addCallback('SlideChangeStart', function(swiper){
 mySwiper1.swipeTo(mySwiper4.activeLoopIndex);
 mySwiper3.swipeTo(mySwiper4.activeLoopIndex);  
 })
-        
+
+var mySwiper5 = $('.swiper-container5').swiper({
+ centeredSlides: true, 
+         slidesPerView: 'auto', 
+         touchRatio: 0.2, 
+         slideToClickedSlide: true 
+})
+
 var mySwiper2 = $('.swiper-container2').swiper({
             pagination:          '.pagination2',
             paginationClickable: true,

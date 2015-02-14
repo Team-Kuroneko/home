@@ -800,11 +800,11 @@ img.zyun:hover{
     position: relative;
     z-index: 1000;
     height: auto;
--webkit-transform:translate(50px,50px) scale(2);
-    -moz-transform:translate(50px,50px) scale(2);
-    -o-transform:translate(50px,50px) scale(2);
-    -ms-transform:translate(50px,50px) scale(2);
-    transform:translate(50px,50px) scale(2);
+-webkit-transform:translate(50px,80px) scale(2);
+    -moz-transform:translate(50px,80px) scale(2);
+    -o-transform:translate(50px,80px) scale(2);
+    -ms-transform:translate(50px,80px) scale(2);
+    transform:translate(50px,80px) scale(2);
 }
 
 .zyun-channel{
