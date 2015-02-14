@@ -9,7 +9,18 @@ var lists = $('nav li').on('click', function (event) {
     var href = $('a',this).attr('href');
     // リンク名がid('#')では無い場合,通常のリンク動作をさせ終了
     if (href.substr(0,1) != '#') {
-        location.href = href;
+        switch ($('a',this).attr('target')){
+                case '_blank':
+                    window.open(href);
+                    break;
+                case '_self':
+                case '_parent':
+                case '_top':
+                default:
+                    location.href = href;
+                    break;
+        }
+        
         return;
     // セクションにリンク名のidが無い場合終了
     } else if (sections.filter(href).index() == -1){
