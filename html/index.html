@@ -705,7 +705,7 @@
               
             <div class ="portfolio-frame">
          
-            <div class="swiper-container2">
+            <div class="swiper-container sc-portfolio">
 <div class="swiper-wrapper">
 <div class="portfolioMain swiper-slide" >
 <div class="portfolio-contents1"><img src="img/zyun.png" class="zyun">Slide 1</div>
@@ -1020,24 +1020,15 @@ var mySwiper5 = $('.swiper-container5').swiper({
 mySwiper4.params.control = mySwiper3; 
 mySwiper3.params.control = mySwiper1; 
 
-var mySwiper2 = $('.swiper-container2').swiper({
+var mySwiper2 = $('.sc-portfolio').swiper({
             pagination:'.pagination2',
             paginationClickable: true,
             slidesPerView: 'auto',
-            centeredSlides:true,
-            loopedSlides:3,        
             mode:'horizontal',
             grabCursor:true,
-            roundLengths: true,
             loop: true,
-            paginationElement:   'a',
+    centeredSlides:true
 
-    onSwiperCreated: function(){
-
-                $('.pagination2 a').each(function( key ){
-                    $(this).html( key + 1 );
-                });
-}
 
     
 }) 
