@@ -483,22 +483,22 @@ transform: scale(0.6);
 }
 .swiper-slide-active .zyun_name{
    -moz-animation-name: bg;
- -moz-animation-duration: 1s;
+ -moz-animation-duration: 0.5s;
  -moz-animation-timing-function: ease-in;
  -moz-animation-iteration-count: 1;
 
  -webkit-animation-name:  bg;
- -webkit-animation-duration: 1s;
+ -webkit-animation-duration: 0.5s;
  -webkit-animation-timing-function: ease-in;
  -webkit-animation-iteration-count: 1;
 
  -o-animation-name: bg;
- -o-animation-duration: 1s;
+ -o-animation-duration: 0.5s;
  -o-animation-timing-function: ease-in;
  -o-animation-iteration-count: 1;
 
  -ms-animation-name: bg;
- -ms-animation-duration: 1s;
+ -ms-animation-duration: 0.5s;
  -ms-animation-timing-function: ease-in;
  -ms-animation-iteration-count: 1;
 
