@@ -23,9 +23,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-         <link rel="stylesheet" href="css/swiper.css">
+         <link rel="stylesheet" href="css/idangerous.swiper.css">
         <link rel="stylesheet" href="css/contact.css">
-  <script defer src="js/swiper.jquery.min.js"></script>
+  <script defer src="js/idangerous.swiper.min.js"></script>
 
     </head>
     <body>
@@ -1011,14 +1011,16 @@ var mySwiper4 = $('.swiper-container4').swiper({
     watchSlidesProgress:true,
     watchVisibility:true
 })
+mySwiper4.addCallback('SlideChangeStart', function(swiper){
+mySwiper3.swipeTo(mySwiper4.activeLoopIndex);
+mySwiper1.swipeTo(mySwiper4.activeLoopIndex);
+})
 var mySwiper5 = $('.swiper-container5').swiper({
         slidesPerView: 'auto', 
     touchRatio:0,
         loop: true,
     onlyExternal:true
 })
-mySwiper4.params.control = mySwiper3; 
-mySwiper3.params.control = mySwiper1; 
 
 var mySwiper2 = $('.swiper-container2').swiper({
             pagination:'.pagination2',
