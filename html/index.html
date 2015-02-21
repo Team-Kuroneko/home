@@ -23,9 +23,9 @@
 
         <link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-         <link rel="stylesheet" href="css/idangerous.swiper.css">
+         <link rel="stylesheet" href="css/swiper.css">
         <link rel="stylesheet" href="css/contact.css">
-  <script defer src="js/idangerous.swiper.min.js"></script>
+  <script defer src="js/swiper.jquery.min.js"></script>
 
     </head>
     <body>
@@ -526,14 +526,14 @@
             <header></header>
             <div id="contents">
                 <div>
-                    <h1 class="rocks2">NewS</h1>
+                    <h1 class="rocks2">& NewS</h1>
                     <p class="rocks2">
                     &nbsp;&nbsp;&nbsp;&nbsp;Home ページ　立ち上げました！2014/12/25
                     </p>
                     <div class="icon-font41" id="icon-play"></div>
                 </div>
                 <div>
-                    <h1 class="rocks2">Team くろねこ</h1>
+                    <h1 class="rocks2">& Team くろねこ</h1>
                     <p class="rocks2">
                      &nbsp;&nbsp;&nbsp;&nbsp;Team くろねことは、ゲーム開発をしたいという熱い意志をもった集団である。                
                     </p>
@@ -565,10 +565,11 @@
             </header>
                 
             <div class="main-container">
+    
                 <div class="swiper-container1">
                 <div class="swiper-wrapper">
                                         <div class="swiper-slide master-channel">
-                        <div class="zyun_name">
+                        <div class="master_name">
                             <div class="rocks4">
                                 <p>職業：隠居中…</p>
                                 <p>学名：Felis sylvestris Catus</p>
@@ -610,7 +611,7 @@
 <p>好きなこと　アニメ</P>
 <p>寝る事に関しては誰にも負けない！？ 酔拳ならぬ睡拳の使い手</p>
 <p>広く浅く面白くをテーマに色んな言語に挑戦中！！</p>
-<p>最大に弱点は美的センスの欠如だとか…レジェンド級の画伯である。</p>
+<p>最大の弱点は美的センスの欠如だとか…レジェンド級の画伯である。</p>
 <p>まったりとゲーム制作（仮）して行きたいなっ♪</p>
                         </div>
                     </div>
@@ -661,26 +662,38 @@
                     
 
                 </div>
-                     <div class="pagination">
-           
+            
                 </div>
                 </div>
+    
+                <div class="swiper-container5">
+               <div class="swiper-wrapper">
+                <div class="swiper-slide blue-slide master-channel"><img src="img/spring2.png" class="zyun2">
+                </div>
+                   <div class="swiper-slide red-slide gin-channel"><img src="img/silver2.png" class="zyun2">
+                    </div>
+                    <div class="swiper-slide orange-slide zyun-channel"><img src="img/zyun2.png" class="zyun2">
+                    </div>
+                </div>
+                        <div class="pagination3">
+           </div>
+        
                 </div>
             </div><!-- sectionおわりのdiv -->
                    
         <!-- / #vol2 --></section>
 
         <section id="service">
-            <header>
-                <h1>Services</h1>
+          <header>
+                <h1 class="rocks3">!Services!</h1>
             </header>
             <div>
-                <p>
-                    COMING SOON.<br>
-                    9/20 公開予定
+                <p class="rocks">
+                    メンテナンス中！<br>
+                    しばらくお待ちください。
                 </p>
             </div>
-                    
+                     
 
         <!-- / #vol3    --></section>
         <section id="portfolio">
@@ -952,6 +965,10 @@ $(window).resize(function(){
 
 
 Or with jQuery/Zepto
+mySwiper4.addCallback('SlideChangeStart', function(swiper){
+mySwiper1.swipeTo(mySwiper4.activeIndex);
+mySwiper3.swipeTo(mySwiper4.activeIndex);  
+})
 
     
 */
@@ -979,24 +996,32 @@ var mySwiper3 = $('.swiper-container3').swiper({
     onlyExternal:true,
     slidesPerView:'auto',
     loop: true,
-    
+    loopedSlides:3,
+
 
 })
 var mySwiper4 = $('.swiper-container4').swiper({
-    pagination: '.pagination',
+    pagination: '.pagination3',
     paginationClickable: true,
     slidesPerView:'auto',
     loop: true,
     loopedSlides:3,
+     touchRatio:0.8,
      grabCursor:true,
+    watchSlidesProgress:true,
+    watchVisibility:true
 })
-mySwiper4.addCallback('SlideChangeStart', function(swiper){
-mySwiper1.swipeTo(mySwiper4.activeLoopIndex);
-mySwiper3.swipeTo(mySwiper4.activeLoopIndex);  
+var mySwiper5 = $('.swiper-container5').swiper({
+        slidesPerView: 'auto', 
+    touchRatio:0,
+        loop: true,
+    onlyExternal:true
 })
-        
+mySwiper4.params.control = mySwiper3; 
+mySwiper3.params.control = mySwiper1; 
+
 var mySwiper2 = $('.swiper-container2').swiper({
-            pagination:          '.pagination2',
+            pagination:'.pagination2',
             paginationClickable: true,
             slidesPerView: 'auto',
             centeredSlides:true,
