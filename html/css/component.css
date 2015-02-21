@@ -819,9 +819,8 @@ img.zyun:hover{
 
 }
 .gin-channel{
-    background-color: #ca4040;
-        border-radius: 39px; 
-
+    background-color: rgba(232,232,232,0.7);
+    border-radius: 39px; 
 
 }
 .master-channel{
@@ -894,6 +893,12 @@ margin-left: 300px;
     background-color: rgb(186, 179, 251);
      border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
     box-shadow:5px 6px 6px rgba(255,255,255,0.3), 10px 11px 10px rgba(255,255,255,1) inset, 5px -6px 6px rgba(255,255,255,0.5) inset; 
+margin-left: 300px;
+}
+.gin_name{
+    background-color: rgb(255, 10, 10);
+     border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+    box-shadow:5px 6px 6px rgba(254,199,199,0.3), 10px 11px 10px rgba(254,199,199,1) inset, 5px -6px 6px rgba(254,199,199,0.5) inset; 
 margin-left: 300px;
 }
 
