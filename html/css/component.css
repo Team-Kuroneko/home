@@ -1,6 +1,7 @@
 
 html {  
 background-color: #FFFFE0;
+    background-image: url(../img/tartan.png);
 } 
 
 a, li {
@@ -849,10 +850,10 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
   0 0  8px #fff,
   0 0 12px #fff,
-  0 0 18px black,
-  0 0 22px yellow,
-  0 0 28px white,
-  0 0 36px black;
+  0 0 18px yellow,
+  0 0 22px white,
+  0 0 28px yellow,
+  0 0 36px yellow;
 }
 
 .rocks3{
@@ -1031,10 +1032,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 }
 #Home{
 width:100%;
-    background-image: linear-gradient(rgb(238, 238, 238) 0.1em, transparent 0.1em); background-size: 100% 1.2em; background-color: rgb(255, 255, 255);
-    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
-    box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 5px -6px 6px rgba(0,0,0,0.3) inset; 
-
+    position: relative;
 }
 
 .Home{
@@ -1540,6 +1538,7 @@ font-size: 0.3em;
     float: left;
     margin: 0px;
     padding: 0px;
+    
 }
 #sidebar {
     width: 40%;

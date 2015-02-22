@@ -4375,6 +4375,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 0px;
   color: inherit;
     background-color: #FFFFE0;
+    background-image: url(../img/tartan.png);
 }
 .jumbotron h1,
 .jumbotron .h1 {
