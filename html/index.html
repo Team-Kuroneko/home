@@ -29,6 +29,7 @@
 
     </head>
     <body>
+     
    <!--     
         <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -525,19 +526,34 @@
          <section id="Home" class="active">
             <header></header>
             <div id="contents">
+                <div class="blocks">
+				<div><img src="img/top_mini_8.svg" class="blocks_under">
+				</div>
+                    <p>チームクロネコでは、プログラミングの勉強をしたい、イラストを描きたい、と思っているお友達をさがしています。<br>
+                    毎週土曜日の夜9時にスカイプで話し合っています。いまはホームページ作成の勉強をしています。<br>
+                    ニコ生でたまに放送しているので興味があったら遊びに来てください。<br>by クロネコ一同
+                    </p>
+			
+            </div>
+                
                 <div>
-                    <h1 class="rocks2">& NewS</h1>
-                    <p class="rocks2">
+                  
+                    <h1 class="ribbon"><SPAN class="rocks2">* NewS *</SPAN></h1>
+                    <p class="rocks2_2">
                     &nbsp;&nbsp;&nbsp;&nbsp;Home ページ　立ち上げました！2014/12/25
                     </p>
                     <div class="icon-font41" id="icon-play"></div>
                 </div>
                 <div>
-                    <h1 class="rocks2">& Team くろねこ</h1>
-                    <p class="rocks2">
-                     &nbsp;&nbsp;&nbsp;&nbsp;Team くろねことは、ゲーム開発をしたいという熱い意志をもった集団である。                
+                    <h1 class="ribbon"><SPAN class="rocks2">* Team くろねこ *</SPAN></h1>
+                    <p class="rocks2_2">
+                     &nbsp;&nbsp;&nbsp;&nbsp;Team くろねことは、ゲーム開発をしたいという熱い意志をもった集団である。
                     </p>
                 </div>
+                  
+                  
+                
+                
             </div>
             
             <div id="sidebar">
@@ -708,7 +724,7 @@
             <div class="swiper-container2">
 <div class="swiper-wrapper">
 <div class="portfolioMain swiper-slide" >
-<div class="portfolio-contents1"><img src="img/zyun.png" class="zyun">Slide 1</div>
+<div class="portfolio-contents1">Slide 1</div>
     <div class="portfolio-checkAni1 portfolio-checkAni2"></div>
 </div>
 <div class="portfolioMain swiper-slide" >
@@ -719,66 +735,8 @@
 <div class="portfolio-contents1">Slide 3</div>
 <div class="portfolio-checkAni1 portfolio-checkAni2"></div>
 </div>
-<div class="portfolioMain swiper-slide" >
-<div class="portfolio-contents1">Slide 4</div>
-<div class="portfolio-checkAni1 portfolio-checkAni2"></div>
 </div>
-<div class="portfolioMain swiper-slide" >
-<div class="portfolio-contents1">Slide 5</div>
-<div class="portfolio-checkAni1"></div>
 </div>
-<div class="portfolioMain swiper-slide" >
-<div class="portfolio-contents1">Slide 6</div>
-<div class="portfolio-checkAni1"></div>
-    </div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 7</div>
-<div class="portfolio-checkAni1"></div>
-    </div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 8</div>
-<div class="portfolio-checkAni1"></div>
-    </div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 9</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 10</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 11</div>
-<div class="portfolio-checkAni1"></div>
-    </div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 12</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 13</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 14</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 15</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-<div class="portfolioMain swiper-slide">
-<div class="portfolio-contents1">Slide 16</div>
-    <div class="portfolio-checkAni1"></div>
-</div>
-
-    
-</div>
-                    
-
-</div>
-
- 
             </div>
                  <div class="pagination2">
            
@@ -970,7 +928,8 @@ mySwiper1.swipeTo(mySwiper4.activeIndex);
 mySwiper3.swipeTo(mySwiper4.activeIndex);  
 })
 
-    
+  
+
 */
 
 
@@ -1006,7 +965,7 @@ var mySwiper4 = $('.swiper-container4').swiper({
     slidesPerView:'auto',
     loop: true,
     loopedSlides:3,
-     touchRatio:0.8,
+     touchRatio:0.9,
      grabCursor:true,
     watchSlidesProgress:true,
     watchVisibility:true
@@ -1032,8 +991,7 @@ var mySwiper2 = $('.swiper-container2').swiper({
             grabCursor:true,
             roundLengths: true,
             loop: true,
-            paginationElement:   'a',
-
+            paginationElement:'a',
     onSwiperCreated: function(){
 
                 $('.pagination2 a').each(function( key ){
@@ -1051,13 +1009,11 @@ var mySwiper2 = $('.swiper-container2').swiper({
 </script>
 
  <script>
-       $('.rocks2').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+      $('.ribbon').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
   if (isInView) {
-         $(this).css('opacity', 0);
+         $(this).css({left : "-1500px"});
 
-           $(this).animate({
-                  opacity: 1
-           },5000);
+           $(this).animate({left: "0px"},2500);
    
     // element is now visible in the viewport
     if (visiblePartY == 'top') {
@@ -1079,7 +1035,8 @@ var mySwiper2 = $('.swiper-container2').swiper({
   $(this).css('opacity', 0);
   }
 });
-              
+
 </script>
-    </body>
+
+</body>
 </html>

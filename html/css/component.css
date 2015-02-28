@@ -829,6 +829,35 @@ img.zyun:hover{
     background-color: none;
     border-radius: 39px; 
 }
+.ribbon {
+    position: relative;
+    color: #ffffff ;
+    background-image: url(../img/head011_11.png);
+    line-height: 1;
+    margin: 20px 0px 20px -10px;
+    padding: 10px 5px 10px 20px;
+    box-shadow:2px 4px 5px 0px  #ccc;
+    border-top:5px solid #ea9878;
+}
+.ribbon:after, .ribbon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #b86d77;
+}
+.ribbon:after {
+    left: 0;
+    border-right: 5px solid #b86d77;
+
+}
+.ribbon:before {
+    right: 0;
+    border-left: 5px solid #b86d77;
+}
+
 
 .rocks{
 font-family:'icomoon';
@@ -845,17 +874,30 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 }
 .rocks2{
 font-family:'icomoon';
-    color: black;
+    color: brown;
+text-shadow: 0 15px 10px rgba(0,0,0,0.1),
+  0 0  4px #fff,
+  0 0  8px #fff,
+  0 0 12px #fff,
+  0 0 18px pink,
+  0 0 22px pink,
+  0 0 28px white,
+  0 0 36px pink;
+ 
+}
+.rocks2_2{
+font-family:'icomoon';
+    color: brown;
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
   0 0  8px #fff,
   0 0 12px #fff,
   0 0 18px yellow,
-  0 0 22px white,
-  0 0 28px yellow,
+  0 0 22px yellow,
+  0 0 28px white,
   0 0 36px yellow;
+ 
 }
-
 .rocks3{
     padding-top: 20px;
 font-family:'icomoon';
@@ -911,6 +953,13 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0 36px yellow;
 
 
+}
+.port_imgsize1{
+ max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1000;
+     margin: 0 auto;
 }
 .movingUpmenu{
 -moz-animation-name: fadeInLoad;
@@ -1698,3 +1747,48 @@ font-size: 0.3em;
 .fb_iframe_widget span{
 	width: 100% !important;
 }
+
+.blocks{
+	margin: 20px;
+	padding: 10px;
+	background-color: #eee;
+	
+}
+.blocks_under { 
+    
+	width: 95%;
+    margin: 0 auto;
+	padding: 5px;
+	line-height: 1.5em;
+    background-color: white;
+    
+  /*  background-position: center center;*/
+/*   background-image: url(../img/top_mini_8.svg);*/
+  /* 画像をタイル状に繰り返し表示しない */
+/*  background-repeat: no-repeat;*/
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+/*    background-attachment: fixed;*/
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+      box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(0,0,0,1.0) inset;
+
+
+}
+
+.block-left {
+	opacity: 1;
+	-webkit-transform: translateX(-180px);
+	-moz-transform: translateX(-180px);
+	transform: translateX(-180px);
+}
+
+.block-right {
+    width:100%;
+    height: 100%;
+	opacity: 1;
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+
