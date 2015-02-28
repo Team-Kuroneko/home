@@ -979,6 +979,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
     position: relative;
     z-index: 1000;
      margin: 0 auto;
+
 }
 .movingUpmenu{
 -moz-animation-name: fadeInLoad;
