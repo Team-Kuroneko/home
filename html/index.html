@@ -1016,8 +1016,7 @@ var mySwiper4 = $('.swiper-container4').swiper({
     loopedSlides:3,
      touchRatio:0.9,
      grabCursor:true,
-    watchSlidesProgress:true,
-    watchVisibility:true
+   
 })
 mySwiper4.addCallback('SlideChangeStart', function(swiper){
 mySwiper3.swipeTo(mySwiper4.activeLoopIndex);
@@ -1146,6 +1145,9 @@ $(window).resize(function(){
 </script>
 
  <script>
+             var bool1 = true, bool2 = true;
+
+     
       $('.neko').find('.ribbon').css('opacity', 0); 
       $('.neko').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
           $(this).find('.ribbon').css({left : "-1500px"});
@@ -1158,13 +1160,24 @@ $(window).resize(function(){
     if (visiblePartY == 'top') {
       // top part of element is visible
     //     $(this).css('opacity', 0.5);
-         $(this).find('.ribbon').animate({left: "0px"},1500);
-     $(this).find('.ribbon').css('opacity', 1); 
-       
+        if (bool1){
+            $(this).find('.ribbon').animate({left: "0px"},1500);
+            $(this).find('.ribbon').css('opacity', 1); 
+            bool1=false;
+        }else{
+            $(this).find('.ribbon').css('opacity', 1); 
+            $(this).find('.ribbon').css({left : "0px"});
+        }
     } else if (visiblePartY == 'bottom') {
                  //$(this).css('opacity', 0.5);
-       $(this).find('.ribbon').animate({left: "0px"},1500);
-     $(this).find('.ribbon').css('opacity', 1); 
+        if (bool1){
+            $(this).find('.ribbon').animate({left: "0px"},1500);
+            $(this).find('.ribbon').css('opacity', 1); 
+            bool1=false;
+        }else{
+            $(this).find('.ribbon').css('opacity', 1); 
+            $(this).find('.ribbon').css({left : "0px"});
+        }
         // bottom part of element is visible
     } else {
       // whole part of element is visible
@@ -1190,13 +1203,25 @@ $(window).resize(function(){
     if (visiblePartY == 'top') {
       // top part of element is visible
     //     $(this).css('opacity', 0.5);
-         $(this).find('.ribbon').animate({left: "0px"},1500);
-     $(this).find('.ribbon').css('opacity', 1); 
+        if (bool2){
+            $(this).find('.ribbon').animate({left: "0px"},1500);
+            $(this).find('.ribbon').css('opacity', 1); 
+            bool2=false;
+        }else{
+            $(this).find('.ribbon').css('opacity', 1); 
+            $(this).find('.ribbon').css({left : "0px"});
+        }
        
     } else if (visiblePartY == 'bottom') {
                  //$(this).css('opacity', 0.5);
-       $(this).find('.ribbon').animate({left: "0px"},1500);
-     $(this).find('.ribbon').css('opacity', 1); 
+        if (bool2){
+            $(this).find('.ribbon').animate({left: "0px"},1500);
+            $(this).find('.ribbon').css('opacity', 1); 
+            bool2=false;
+        }else{
+            $(this).find('.ribbon').css('opacity', 1); 
+            $(this).find('.ribbon').css({left : "0px"});
+        }
         // bottom part of element is visible
     } else {
       // whole part of element is visible
