@@ -1635,6 +1635,7 @@ font-size: 0.3em;
         width: 40%;
         float: right;
         margin: 0px;
+        margin-top: 20px;
         padding: 0px;
     }
     #footer {
@@ -1664,6 +1665,7 @@ font-size: 0.3em;
         width: 30%;
         float: right;
         margin: 0px;
+        margin-top: 20px;
         padding: 0px;
     }
     #footer {
@@ -1747,6 +1749,14 @@ font-size: 0.3em;
         margin: 0px;
         padding: 0px;
     }
+    .blocks {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
+    .rocks2_2 {
+        font-size: 1.25em;
+        line-height: 1.25em;
+    }
 }
 
 .fbcomments,
@@ -1768,6 +1778,7 @@ font-size: 0.3em;
     
 	width: 95%;
     margin: 0 auto;
+    margin-bottom: 15px;
 	padding: 5px;
 	line-height: 1.5em;
     background-color: white;
