@@ -1048,11 +1048,24 @@ var mySwiper5 = $('.swiper-container5').swiper({
                     $(this).html( key + 1 );
                 });
 }
-
+    
     
 }) 
         
-
+if ($(window).width() < 520) {
+    $('.swiper-container2').width(width*0.9);
+    $('.swiper-container2').height(width*0.9);
+    $('.swiper-container2').find('.swiper-slide').width(width*0.7);
+  $('.swiper-container2').find('.swiper-slide').height(width*0.8);
+    
+    mySwiper1.params.slidesPerView=1;
+    mySwiper3.params.slidesPerView=1;
+    mySwiper4.params.slidesPerView=1;
+        
+        
+    
+    mySwiper2.params.slidesPerView='auto';
+    }
 	
 
 
@@ -1063,32 +1076,37 @@ $(window).resize(function(){
         var width  = $(window).width();
     
     if ($(window).width() < 520) {
-	 	      
     $('.swiper-container2').width(width*0.9);
     $('.swiper-container2').height(width*0.9);
-    
     $('.swiper-container2').find('.swiper-slide').width(width*0.7);
   $('.swiper-container2').find('.swiper-slide').height(width*0.8);
-
-    //$('.swiper-container2').height(height*0.7);
-     //$('.swiper-container2').find('.swiper-slide').height(height*0.7);
     
-        mySwiper2.params.slidesPerView='auto';
-    //mySwiper2.params.centeredSlides=false; 
+    mySwiper1.params.slidesPerView=1;
+    mySwiper3.params.slidesPerView=1;
+    mySwiper4.params.slidesPerView=1;
+        
+        
+    
+    mySwiper2.params.slidesPerView='auto';
     }
 		    	// 幅が480px以上ある時は
 		
     else if ($(window).width() > 520 & $(window).width()<799) {
 	$('.swiper-container2').width(width*0.7);
     $('.swiper-container2').height(width*0.7);
-        
      mySwiper2.params.slidesPerView='auto';
     $('.swiper-container2').find('.swiper-slide').width(width*0.5);
     $('.swiper-container2').find('.swiper-slide').height(width*0.6);
-    	
+    
+    
+        
+        
     }else{
     $('.swiper-container2').width(width*0.7);
-        $('.swiper-container2').height(500);
+    $('.swiper-container2').height(500);
+    
+    
+
             
 
      mySwiper2.params.slidesPerView=2;
