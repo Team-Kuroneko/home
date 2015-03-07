@@ -174,9 +174,9 @@ z-index: 1;
 }
 
 .swiper-container2 {
-width: 750px;
-height: 400px;
-color: #fff;
+width: 1000px;
+height: 500px;
+    color: white;
 text-align: center;
 }
 .swiper-container2 {
@@ -245,8 +245,8 @@ margin-top: -550px;
 
 }
 .portfolioMain.swiper-slide {
-width:300px;
-    height:400px;
+width:500px;
+    height:500px;
 opacity: 1;
 -webkit-transform: scale(1);
 -moz-transform: scale(1);
@@ -266,108 +266,91 @@ transform: scale(0.9);
 .portfolioMain.swiper-slide-visible{
  
     opacity: 0.8;
--webkit-transform: scale(0.5);
--moz-transform: scale(0.5);
--ms-transform: scale(0.5);
--o-transform: scale(0.5);
-transform: scale(0.5);
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+-ms-transform: scale(0.8);
+-o-transform: scale(0.8);
+transform: scale(0.8);
     
 }
+/*ポートフォリオの画像はbackground-imageで処理する*/
 .portfolioMain .portfolio-contents1{
     position: absolute;
     z-index:-1;
     opacity: 1.0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+        height:100%;
+    background-size: 70% auto;
+background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-repeat: no-repeat;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
     background-color: black;
     background-image: url(../img/knight_and_dracula.png);
       box-shadow:5px 6px 26px rgba(0,0,0,1),10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 3px rgba(255,255,255,1.0) inset;
     
 
 }
-.portfolioMain2.swiper-slide {
-margin-top: 30px;
-    width:320px;
-    height:337px;
-opacity: 1;
--webkit-transform: scale(1);
--moz-transform: scale(1);
--ms-transform: scale(1);
--o-transform: scale(1);
-transform: scale(1);
-}
-.portfolioMain2.swiper-slide-visible.swiper-slide-active{
-
-opacity: 1;
--webkit-transform: scale(0.9);
--moz-transform: scale(0.9);
--ms-transform: scale(0.9);
--o-transform: scale(0.9);
-transform: scale(0.9);
-}
-.portfolioMain2.swiper-slide-visible{
- 
-    opacity: 0.8;
--webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--ms-transform: scale(0.8);
--o-transform: scale(0.8);
-transform: scale(0.8);
-    
-}
-.portfolioMain2 .portfolio-contents1{
+.portfolioMain .portfolio-contents2{
     position: absolute;
     z-index:-1;
     opacity: 1.0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+    width:100%;
+        height:100%;
+    background-size: 80% auto;
+background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-repeat: no-repeat;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-color: purple;
     background-image: url(../img/picture_book1.png);
       box-shadow:5px 6px 26px rgba(0,0,0,1),10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 3px rgba(255,255,255,1.0) inset;
     
 
 }
-.portfolioMain3.swiper-slide {
-margin-top: 30px;
-    width:300px;
-    height:300px;
-opacity: 1;
--webkit-transform: scale(1);
--moz-transform: scale(1);
--ms-transform: scale(1);
--o-transform: scale(1);
-transform: scale(1);
-}
-.portfolioMain3.swiper-slide-visible.swiper-slide-active{
-
-opacity: 1;
--webkit-transform: scale(0.9);
--moz-transform: scale(0.9);
--ms-transform: scale(0.9);
--o-transform: scale(0.9);
-transform: scale(0.9);
-}
-.portfolioMain3.swiper-slide-visible{
- 
-    opacity: 0.8;
--webkit-transform: scale(0.8);
--moz-transform: scale(0.8);
--ms-transform: scale(0.8);
--o-transform: scale(0.8);
-transform: scale(0.8);
-    
-}
-.portfolioMain3 .portfolio-contents1{
+.portfolioMain .portfolio-contents3{
     position: absolute;
     z-index:-1;
     opacity: 1.0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    background-image: url(../img/book1.png);
+    width:100%;
+        height:100%;
+    background-size: 85% auto;
+background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+   background-color: rgb(186, 179, 251);
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-repeat: no-repeat;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-image: url(../img/gamescreen3.png);
       box-shadow:5px 6px 26px rgba(0,0,0,1),10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 3px rgba(255,255,255,1.0) inset;
     
 
+}
+
+.knight{
+width: 80%;
+    margin-top: 300px;
+top:10%; /* 上から半分 */ 
+    left:10%;  
+display:table-cell; /* 要素をテーブルのようにする */
+	text-align:center; /* インライン要素の中央揃え */
+	vertical-align:middle; /* 天地中央に揃える */
+    margin: 0 auto;
+	padding: 5px;
+	line-height: 1.5em;
+    background-color: white;
+    text-align:center;
+  /* 画像をタイル状に繰り返し表示しない */
+/*  background-repeat: no-repeat;*/
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+/*    background-attachment: fixed;*/
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+      box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 20px rgba(0,0,0,1.0) inset;
 }
 
 .red-slide{background:#ca4040;}
@@ -403,8 +386,8 @@ border-radius: 16px;
 
 .portfolio .pagination2{
     position: absolute;
+    margin:0 auto;
     z-index: 20;
-    left: 200px;
      width: 100%;
     bottom: -50px;
 }
@@ -419,21 +402,22 @@ border-radius: 16px;
 
 }
 .portfolio .swiper-visible-switch{
+    text-align: center;
+    font-weight: bold; 
+    color: rgba(0, 0, 0, 0.72); 
+    
     background-image: linear-gradient(90deg, rgba(255, 186, 187, 0.5) 50%, transparent 50%), linear-gradient(rgba(255, 186, 187, 0.5) 50%, transparent 50%); background-size: 10px 10px; background-color: white;
-    border:3px solid #fff;
+    border:3px solid purple;
 }
 
 .portfolio .swiper-active-switch{
-    color: rgba(0, 0, 0, 0.72); 
-    text-decoration: none; 
-    font-weight: bold; 
     text-shadow: 1px 1px 0 #ffffff; 
     box-shadow: 
         2px 2px 0.5em rgba(122, 98, 0, 0.55), 
         inset 1px 1px 0 rgba(255, 255, 255, 0.9), 
         inset -1px -1px 0 rgba(0, 0, 0, 0.34) 
     ; 
-    border: 5px solid #fff; 
+    border: 7px solid #fff; 
     background: 
         -moz-linear-gradient( 
         -72deg, 
@@ -507,10 +491,6 @@ border-radius: 16px;
        padding-left: 10px;
     padding-right: 10px;
 
- color: rgba(0, 0, 0, 0.72);  
-    text-decoration: none;  
-    font-weight: bold;  
-    text-shadow: 1px 1px 0 #ffffff;  
     
     border-radius: 39px; 
     top: 60px; 
@@ -523,7 +503,9 @@ border-radius: 16px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 39px; 
-
+    position: relative;
+width:100%;
+    height:100%;
       box-shadow:5px 6px 76px rgba(0,0,0,1.0), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset;
 }
 .swiper-slide-active .portfolio-checkAni1{

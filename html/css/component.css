@@ -820,7 +820,7 @@ img.zyun:hover{
 
 }
 .gin-channel{
-    background-color: rgba(232,232,232,0.7);
+    background-color: rgba(255,255,232,0.7);
     border-radius: 39px; 
 
 }
@@ -928,7 +928,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 .rocks5{
     padding-top: 20px;
 font-family:'icomoon';
-    color: black;
+    color: brown;
 text-shadow: 0 15px 10px rgba(0,0,0,0.1),
   0 0  4px #fff,
   0 0  8px #fff,
@@ -953,7 +953,7 @@ margin-left: 300px;
 margin-left: 300px;
 }
 .gin_name{
-    background-color: rgb(255, 10, 10);
+    background-color: rgb(255, 127, 116);
      border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
     box-shadow:5px 6px 6px rgba(254,199,199,0.3), 10px 11px 10px rgba(254,199,199,1) inset, 5px -6px 6px rgba(254,199,199,0.5) inset; 
 margin-left: 300px;
@@ -973,14 +973,7 @@ text-shadow: 0 15px 10px rgba(0,0,0,0.1),
 
 
 }
-.port_imgsize1{
- max-width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 1000;
-     margin: 0 auto;
 
-}
 .movingUpmenu{
 -moz-animation-name: fadeInLoad;
  -moz-animation-duration: 3s;
@@ -1356,12 +1349,11 @@ z-index: 20000;
 @-moz-keyframes bg-color-vt {
  0% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height: 0%;
-     
+     height: 100%;
  }
  100% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height:100%;
+     height:0%;
  }
  }
 
@@ -1379,24 +1371,24 @@ background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparen
  @-o-keyframes bg-color-vt {
  0% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height: 0%;
+     height: 100%;
  }
  100% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height:100%;
+     height:0%;
  }
  }
 
  @-ms-keyframes bg-color-vt {
- 0% {
+  0% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height: 0%;
+     height: 100%;
  }
  100% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
-     height:100%;
+     height:0%;
  }
- }
+}
 
 
 @-moz-keyframes bg-color-opening{

@@ -507,7 +507,6 @@ margin-top: -550px;
 
 }
 .portfolioMain{
- 
 
 }
 .portfolioMain.swiper-slide {
@@ -701,6 +700,8 @@ border-radius: 16px;
       box-shadow:5px 6px 76px rgba(0,0,0,1.0), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset;
 }
 .portfolioMain .portfolio-contents1{
+
+text-align:center;
     position: absolute;
     z-index:-1;
     opacity: 1.0;
