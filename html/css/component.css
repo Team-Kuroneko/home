@@ -1716,3 +1716,7 @@ font-size: 0.3em;
 .fb_iframe_widget span{
 	width: 100% !important;
 }
+
+.main-container {
+    width: 100%;
+}
