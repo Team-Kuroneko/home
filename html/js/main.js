@@ -36,8 +36,22 @@ var lists = $('nav li').on('click', function (event) {
 	var from_idx = sections.filter('.active').removeClass('active').index();
 	self.addClass('active');
     // KEEP OUTのアニメーションを開始
-    $('.keepout').addClass('keepout-anime');
+    //ifの判定で色を付ける　keepPlusSがデフォルト
+    if(href=='#team'){
+        $('.keepout').addClass('keepPlusT');
+	}else if(href=='#service'){
+        $('.keepout').addClass('keepPlusS');
+    }else if(href=='#portfolio'){
+        $('.keepout').addClass('keepPlusP');
+    }else if(href=='#BBS'){
+        $('.keepout').addClass('keepPlusB');
+    }else if(href=='#contact'){
+        $('.keepout').addClass('keepPlusC');
+    }else{
+        $('.keepout').addClass('keepPlusS');
+    }
     
+	$('.keepout').addClass('keepout-anime');
 	// 遷移エフェクトの実行
 	sections.pageChange(from_idx, self.index());
 });
@@ -52,6 +66,11 @@ $.fn.pageChange = function (from_idx, to_idx) {
 $('.keepout').each(function (index, element) {
     $(this).bind('animationend webkitAnimationEnd', function () {
         $(this).removeClass('keepout-anime');
+        $(this).removeClass('keepPlusT');
+        $(this).removeClass('keepPlusS');
+        $(this).removeClass('keepPlusP');
+        $(this).removeClass('keepPlusB');
+        $(this).removeClass('keepPlusC');
     });
 });
 

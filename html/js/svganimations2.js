@@ -86,6 +86,11 @@
             classie.remove( d, 'show');
             classie.add( d, 'showout');
         }, 300);
+        window.setTimeout(function (){
+            var d = document.getElementById('visible');
+            classie.remove( d, 'svg-wrap--bicycle');
+           
+        }, 0);
      // window.setTimeout(function (){
     //       var d = document.getElementById('aa');//ここ。
      //d.next().toggleClass("fade");
