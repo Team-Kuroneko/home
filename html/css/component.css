@@ -428,6 +428,7 @@ background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparen
 @media (min-width:32.5em) and (max-width: 49.938em) {
     .movingUpmenu{
 margin-top: 20px;
+        
     }
        .line-drawing{
 position: relative;
@@ -658,29 +659,49 @@ box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) ins
 	/* Adding a left border of 8 px with a different color for each menu item*/
 	.nav li:nth-child(6n+1) {
 	background: rgb(238, 127, 116);
+		border-left: 8px solid rgb(222, 0, 0);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
 }
 
 .nav li:nth-child(6n+2) {
 	background: rgb(255, 186, 187);
+    border-left: 8px solid rgb(255, 120, 255);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 
 .nav li:nth-child(6n+3) {
 	background: rgb(251, 217, 124);
+    border-left: 8px solid rgb(244, 233, 0);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 
 .nav li:nth-child(6n+4) {
 	background: rgb(173, 255, 173);
+    border-left: 8px solid rgb(0, 233, 0);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 
 .nav li:nth-child(6n+5) {
 	background: rgb(186, 179, 251);
+    border-left: 8px solid rgb(19, 18, 195);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 
 .nav li:nth-child(6n+6) {
 	background: rgb(190, 115, 226);
+    border-left: 8px solid rgb(191, 0, 191);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 .nav li:nth-child(6n+7) {
 	background: rgb(100,100, 100);
+    border-left: 8px solid rgb(9, 18, 25);
+        box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(255,255,255,1.0) inset;
+
 }
 
 	/* make the nav bigger on touch screens */
