@@ -78,7 +78,6 @@
  <svg id="logo" width="1140" height="555" viewBox="0 0 1368.953 661.227" preserveAspectRatio="xMidYMin meet" xmlns="http://www.w3.org/2000/svg"><g>
 <path class="darker" d="M1162.062,301.839c0-1.772,0-3.544,0-5.316"/>
 </g>
-
 <g>
 <path class="darker" d="M1189.091,236.845c5.8,7.249,12.965,13.995,19.088,21.133    c0.824,0.953,1.484,2.182,2.872,2.791c20.18-4.125,48.348-5.643,70.104-1.329c2.921,0.576,6.265,2.221,9.291,1.728    c2.195-0.36,4.682-3.001,6.25-4.652c5.047-5.306,8.045-10.771,13.853-15.285c0.423-0.327,0.815-0.903,1.521-0.798    c6.377,15.673,16.752,29.229,20.271,47.45c1.188,6.153,0.887,12.959-1.521,18.874c-4.286,10.539-13.31,17.959-23.985,23.392    c-8.18,4.159-18.562,6.462-28.381,9.304c-3.174,0.914-6.476,1.705-9.291,3.189c-2.175,6.131-0.153,12.117,1.858,17.278    c6.032,15.473,16.294,27.967,17.399,47.185c1.563,27.053-5.87,49.643-15.372,68.849c1.203-0.179,2.245-1.021,3.378-1.729    c7.63-4.746,14.183-10.389,18.582-17.941c2.541-4.358,4.455-8.896,5.743-14.09c3.822-15.4,3.146-34.406,9.46-48.113    c3.652-7.932,9.129-14.521,16.724-19.405c0.973-0.626,1.895-1.501,3.21-1.728c2.471,15.373-2.007,29.385-6.251,41.867    c-4.258,12.543-9.931,24.188-16.386,35.088c-6.299,10.645-13.619,20.968-22.636,30.172c-4.159,4.253-9.298,8.678-15.203,12.095    c-5.539,3.207-14.034,6.546-23.144,4.651c-7.199-1.501-13.014-5.921-17.061-10.634c-4.23-4.929-7.201-10.538-9.122-16.746    c-3.893-12.609-4.329-29.412-3.21-44.393c2.268-30.349,9.495-56.677,16.386-83.07c-1.695-0.958-3.928-1.118-5.911-1.462    c-6.067-1.047-12.797-1.927-19.09-3.057c-24.466-4.397-44.166-13.485-46.453-35.621"/>
 </g>
@@ -887,90 +886,7 @@
        
 
 
-       <script type="text/javascript">
-/*======
-Use document ready or window load events
-For example:
-With jQuery: $(function() { ...code here... })
-Or window.onload = function() { ...code here ...}
-Or document.addEventListener('DOMContentLoaded', function(){ ...code here... }, false)
-window.onload = function() {
-var mySwiper1 = new Swiper('.swiper-container1',{
-    pagination: '.pagination',
-    paginationClickable: true,
-    slidesPerView:'auto',
-    loop: true
 
-
-  })
-
-
-
-}
-
-=======*/
-
-
-/*
-
-//
-さいずのへんこう
-function fixSwiperHeight(){
-  $('.swiper1').css({
-    height: $(window).height() - $('.pagination').height()
-  })
-  swiper.reInit()
-}
-
-fixSwiperHeight()
-$(window).resize(function(){
-  fixSwiperHeight()
-})
-
-
-Or with jQuery/Zepto
-mySwiper4.addCallback('SlideChangeStart', function(swiper){
-mySwiper1.swipeTo(mySwiper4.activeIndex);
-mySwiper3.swipeTo(mySwiper4.activeIndex);  
-})
-
-function checkWidth () {
-	// スマフォ用のボックスの高さを取得
-	var mobileNavHeight = $('#mobile').height();
-
-	// 480px以下の幅のブラウザでアクセスした時は
-	if ($(window).width() < 481) {
-	 $('#site').css({
-		 // さっき取得したボックスの高さをここに持ってくる
-		  top: mobileNavHeight + 'px !important'
-		  });
-		    	// その高さに合わせて、場所を移動させる
-		    	$(window).scrollTop(mobileNavHeight);
-		        }
-		    	// 幅が480px以上ある時は
-		else if ($(window).width() > 480) {
-		    $('#site').css({
-		    	// そのまま
-		    	  top: 0 + 'px'
-		    	});
-		    	$(window).scrollTop(0);
-		 }
-	}
-	$(document).ready(function(){
-		checkWidth();
-	});
-
-
-onInit: function(){
-                          alert('事件触发了;');
-
-     mySwiper2.params.slidesPerView=1; 
-    }
-*/
-
-
-
-</script>
       <script>
 
     $(function(){
@@ -1017,13 +933,9 @@ var mySwiper5 = $('.swiper-container5').swiper({
                 });
 
     if ($(window).width() < 520) {
-    //       mySwiper1.params.slidesPerView=2;
-      //  mySwiper3.params.slidesPerView=2;
-    //    mySwiper4.params.slidesPerView=2; 
+  
  }else{
-      //     mySwiper1.params.slidesPerView='auto';
-    //    mySwiper3.params.slidesPerView='auto';
-    //    mySwiper4.params.slidesPerView='auto';
+   
 
  }
     }
@@ -1062,10 +974,7 @@ $(window).resize(function(){
     
    $('.swiper-container4').find('.swiper-slide').height(600+((0.5*(520-width)))
 );
-//alert(312000/(1.459*width));
-    //mySwiper1.params.slidesPerView='auto';
-      //  mySwiper3.params.slidesPerView='auto';
-    //    mySwiper4.params.slidesPerView='auto'; 
+
     
     }
 		    	// 幅が480px以上ある時は
@@ -1085,9 +994,7 @@ $(window).resize(function(){
          $('.swiper-container4').height(600);
    $('.swiper-container4').find('.swiper-slide').height(600);
 
-      //  mySwiper1.params.slidesPerView='auto';
-        //mySwiper3.params.slidesPerView='auto';
-        //mySwiper4.params.slidesPerView='auto';
+    
     
     }else{
          $('.swiper-container4').width(660);
@@ -1099,9 +1006,7 @@ $(window).resize(function(){
 
     $('.swiper-container2').width(width*0.7);
         $('.swiper-container2').height(500);
-    //            mySwiper1.params.slidesPerView='auto';
-      //  mySwiper3.params.slidesPerView='auto';
-    //    mySwiper4.params.slidesPerView='auto';
+ 
     
      mySwiper2.params.slidesPerView=2;
         
@@ -1111,45 +1016,19 @@ $(window).resize(function(){
     
     
     
-        //$('.swiper-container2, .swiper-slide').height(height);
-     //$('.swiper-container2').width(width*0.2);
-   // $('.swiper-container2').width(width*0.7);
-    //$('.swiper-container2').height(height*0.5);
-    //$('.swiper-container2').find('.swiper-slide').width(width);
-            
-    //$('.swiper-container2').find('.swiper-slide').width(width/3);
-    
-        //Add reInit, because jQuery's resize event handler may occur earlier than Swiper's one
-     //   mySwiper2.params.slidesPerView='auto';
-    //mySwiper2.params.centeredSlides=false; 
+  
         
          mySwiper4.reInit();
         mySwiper4.resizeFix();
         mySwiper2.reInit();
         mySwiper2.resizeFix();
     
-//      mySwiper2.setWrapperTranslate(0)
-   
+
 
     })
     $(window).resize();
 
-     //   if ($(window).width() < 481) {
-	 //$('#site').css({
-		 // さっき取得したボックスの高さをここに持ってくる
-		//  top: mobileNavHeight + 'px !important'
-		  //});
-		    	// その高さに合わせて、場所を移動させる
-		  //  	$(window).scrollTop(mobileNavHeight);
-		    //    }
-		    	// 幅が480px以上ある時は
-		//else if ($(window).width() > 480) {
-		//    $('#site').css({
-		    	// そのまま
-		//    	  top: 0 + 'px'
-		//    	});
-		//    	$(window).scrollTop(0);
-		// }
+   
 	
 
         
@@ -1168,13 +1047,12 @@ $(window).resize(function(){
           $(this).find('.ribbon').css({left : "-1500px"});
   if (isInView) {
 
-//           $(this).find('.ribbon').animate({left: "0px"},2500);
-  //    $('.neko').find('.ribbon').css('opacity', 1); 
+
        
     // element is now visible in the viewport
     if (visiblePartY == 'top') {
       // top part of element is visible
-    //     $(this).css('opacity', 0.5);
+    
         if (bool1){
             $(this).find('.ribbon').animate({left: "0px"},1500);
             $(this).find('.ribbon').css('opacity', 1); 
@@ -1200,24 +1078,21 @@ $(window).resize(function(){
           $(this).find('.ribbon').css({left : "0px"});
             bool1=false;
     }
-  } //else {
+  } 
     // element has gone out of viewport
-  //$(this).css('opacity', 0);
-    //  $(this).animate({left: "0px"},2500);
- // }
+ 
 });
    $('.neko2').find('.ribbon').css('opacity', 0); 
       $('.neko2').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
           $(this).find('.ribbon').css({left : "-1500px"});
   if (isInView) {
 
-//           $(this).find('.ribbon').animate({left: "0px"},2500);
-  //    $('.neko2').find('.ribbon').css('opacity', 1); 
+
        
     // element is now visible in the viewport
     if (visiblePartY == 'top') {
       // top part of element is visible
-    //     $(this).css('opacity', 0.5);
+    
         if (bool2){
             $(this).find('.ribbon').animate({left: "0px"},1500);
             $(this).find('.ribbon').css('opacity', 1); 
@@ -1228,7 +1103,7 @@ $(window).resize(function(){
         }
        
     } else if (visiblePartY == 'bottom') {
-                 //$(this).css('opacity', 0.5);
+       
         if (bool2){
             $(this).find('.ribbon').animate({left: "0px"},1500);
             $(this).find('.ribbon').css('opacity', 1); 
@@ -1244,11 +1119,7 @@ $(window).resize(function(){
           $(this).find('.ribbon').css({left : "0px"});
             bool2=false;
     }
-  } //else {
-    // element has gone out of viewport
-  //$(this).css('opacity', 0);
-    //  $(this).animate({left: "0px"},2500);
- // }
+  } 
 });
 </script>
 
