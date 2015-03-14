@@ -1138,37 +1138,6 @@ background-repeat: repeat;
 
 }
 
-.border-top{
- -moz-animation-name: ;
- -moz-animation-duration: 5s;
- -moz-animation-timing-function: ease-out;
- -moz-animation-iteration-count: 1;
-
- -webkit-animation-name:;
- -webkit-animation-duration: 2s;
- -webkit-animation-timing-function: ease-out;
- -webkit-animation-iteration-count: 1;
-    
-/*testcode*/
-    
-
- -o-animation-name: ;
- -o-animation-duration: 5s;
- -o-animation-timing-function: ease-out;
- -o-animation-iteration-count: 1;
-
- -ms-animation-name: ;
- -ms-animation-duration: 5s;
- -ms-animation-timing-function: ease-out;
- -ms-animation-iteration-count: 1;
-background-color: #ffffff;
-height: 8px;
-left: 0;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 200
-}
 .border-right-opening {
  -moz-animation-name: bg-color-opening-right;
  -moz-animation-duration: 1s;
@@ -1196,34 +1165,6 @@ right: 0;
 top: 0;
 width: 0px;
 z-index: 20000;
-}
-.border-right{
- -moz-animation-name: ;
- -moz-animation-duration: 5s;
- -moz-animation-timing-function: ease-out;
- -moz-animation-iteration-count: 1;
-
- -webkit-animation-name:;
- -webkit-animation-duration: 5s;
- -webkit-animation-timing-function: ease-out;
- -webkit-animation-iteration-count: 1;
-
- -o-animation-name: ;
- -o-animation-duration: 5s;
- -o-animation-timing-function: ease-out;
- -o-animation-iteration-count: 1;
-
- -ms-animation-name:;
- -ms-animation-duration: 5s;
- -ms-animation-timing-function: ease-out;
- -ms-animation-iteration-count: 1;
-background-color: #ffffff;
-height: 180%;
-position: fixed;
-right: 0;
-top: 0;
-width: 8px;
-z-index: 40000;
 }
 .border-left-opening {
  -moz-animation-name: bg-color-opening;
@@ -1255,69 +1196,6 @@ width: 0px;
 z-index: 20000;
 }
 
-.border-left{
- -moz-animation-name:;
- -moz-animation-duration: 5s;
- -moz-animation-timing-function: ease-out;
- -moz-animation-iteration-count: 1;
-
- -webkit-animation-name:;
- -webkit-animation-duration: 5s;
- -webkit-animation-timing-function: ease-out;
- -webkit-animation-iteration-count: 1;
-
- -o-animation-name: ;
- -o-animation-duration: 5s;
- -o-animation-timing-function: ease-out;
- -o-animation-iteration-count: 1;
-
- -ms-animation-name:;
- -ms-animation-duration: 5s;
- -ms-animation-timing-function: ease-out;
- -ms-animation-iteration-count: 1;
-
-background-color: #ffffff;
-height: 180%;
-left: 0;
-position: fixed;
-top: 0;
-width: 8px;
-z-index: 40000;
-}
-
-.border-bottom {
-    opacity: 0.2;
-     background-image:url(../img/top_mini_8.svg);
-    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
-    box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 5px -6px 6px rgba(0,0,0,0.3) inset; 
-
- -moz-animation-name: bg-color;
- -moz-animation-duration: 5s;
- -moz-animation-timing-function: ease-out;
- -moz-animation-iteration-count: 1;
-
- -webkit-animation-name:bg-color-vt;
- -webkit-animation-duration: 2s;
- -webkit-animation-timing-function: ease-out;
- -webkit-animation-iteration-count: 1;
-
- -o-animation-name: bg-color;
- -o-animation-duration: 5s;
- -o-animation-timing-function: ease-out;
- -o-animation-iteration-count: 1;
-
- -ms-animation-name: bg-color;
- -ms-animation-duration: 5s;
- -ms-animation-timing-function: ease-out;
- -ms-animation-iteration-count: 1;
-
-bottom: 0;
-height: 100%;
-left: 0;
-position: fixed;
-width: 100%;
-z-index: 20000;
-}
 @-moz-keyframes bg-color {
  0% {
      background-color: #eee;
@@ -1369,6 +1247,7 @@ z-index: 20000;
      height: 3px;
  }
  }
+
 @-moz-keyframes bg-color-vt {
  0% {
 background-image: linear-gradient(90deg, rgba(100,100, 100, 0.5) 50%, transparent 50%), linear-gradient(rgba(100,100, 100, 0.5) 50%, transparent 50%); background-size: 50px 50px; background-color: white;     
@@ -1563,41 +1442,7 @@ background-image:url(../img/star2.svg);
  }
  }
 
-@-moz-keyframes bg_jun {
- 0% {
- }
- 100% {
-font-size: 0.3em;
-     
- }
- }
 
- @-webkit-keyframes bg_jun {
- 0% {
-
- }
- 100% {
-font-size: 0.3em;
- }
- }
-
- @-o-keyframes bg_jun {
- 0% {
- }
- 100% {
-font-size: 0.3em;
-     
- }
- }
-
- @-ms-keyframes bg_jun {
- 0% {
- }
- 100% {
-font-size: 0.3em;
-     
- }
- }
 
 /* Positions */
 #logo { 
@@ -1805,16 +1650,7 @@ font-size: 0.3em;
 	padding: 5px;
 	line-height: 1.5em;
     background-color: white;
-    
-  /*  background-position: center center;*/
-/*   background-image: url(../img/top_mini_8.svg);*/
-  /* 画像をタイル状に繰り返し表示しない */
-/*  background-repeat: no-repeat;*/
-   
-  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-/*    background-attachment: fixed;*/
-  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
-      box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(0,0,0,1.0) inset;
+  box-shadow:5px 6px 6px rgba(0,0,0,0.3), 10px 11px 10px rgba(255,255,255,0.5) inset, 20px -21px 21px rgba(255,255,255,0.2) inset, 0 0 0px 1px rgba(0,0,0,1.0) inset;
 
 
 }
