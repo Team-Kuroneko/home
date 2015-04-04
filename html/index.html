@@ -519,7 +519,6 @@
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/snap.svg.js"></script>
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
@@ -536,18 +535,6 @@
   js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>
-        if (document.createElementNS && document.createElementNS("http://www.w3.org/2000/svg", "svg").viewBox) {
-            var scr = document.createElement("script");
-            scr.src = "snap.svg.js";
-            scr.onload = function () {
-                //Snap.svgロード後の処理
-
-            }
-            document.head.appendChild(scr);
-        }
-    </script>
 
     <script>
         //  The function to change the class
@@ -603,13 +590,13 @@
                 roundLengths: true,
                 grabCursor: true,
 
-            })
+            });
             var mySwiper5 = $('.swiper-container5').swiper({
                 slidesPerView: 'auto',
                 touchRatio: 0,
                 loop: true,
                 onlyExternal: true
-            })
+            });
 
             var mySwiper2 = $('.swiper-container2').swiper({
                 pagination: '.pagination2',
@@ -635,7 +622,7 @@
 
                     }
                 }
-            })
+            });
 
             $(window).resize(function () {
 
@@ -694,7 +681,7 @@
                 mySwiper2.reInit();
                 mySwiper2.resizeFix();
 
-            })
+            });
             $(window).resize();
 
         });
@@ -704,108 +691,109 @@
         var bool1 = true,
             bool2 = true;
 
+        // スマホ以外の場合、アニメーション動作
+        if (getDevice != 'sp') {
+            $('.neko').find('.ribbon').css('opacity', 0);
+            $('.neko').bind('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                $(this).find('.ribbon').css({
+                    left: "-1500px"
+                });
+                if (isInView) {
 
-        $('.neko').find('.ribbon').css('opacity', 0);
-        $('.neko').bind('inview', function (event, isInView, visiblePartX, visiblePartY) {
-            $(this).find('.ribbon').css({
-                left: "-1500px"
-            });
-            if (isInView) {
+                    // element is now visible in the viewport
+                    if (visiblePartY == 'top') {
+                        // top part of element is visible
 
-                // element is now visible in the viewport
-                if (visiblePartY == 'top') {
-                    // top part of element is visible
-
-                    if (bool1) {
-                        $(this).find('.ribbon').animate({
-                            left: "0px"
-                        }, 1500);
+                        if (bool1) {
+                            $(this).find('.ribbon').animate({
+                                left: "0px"
+                            }, 1500);
+                            $(this).find('.ribbon').css('opacity', 1);
+                            bool1 = false;
+                        } else {
+                            $(this).find('.ribbon').css('opacity', 1);
+                            $(this).find('.ribbon').css({
+                                left: "0px"
+                            });
+                        }
+                    } else if (visiblePartY == 'bottom') {
+                        //$(this).css('opacity', 0.5);
+                        if (bool1) {
+                            $(this).find('.ribbon').animate({
+                                left: "0px"
+                            }, 1500);
+                            $(this).find('.ribbon').css('opacity', 1);
+                            bool1 = false;
+                        } else {
+                            $(this).find('.ribbon').css('opacity', 1);
+                            $(this).find('.ribbon').css({
+                                left: "0px"
+                            });
+                        }
+                        // bottom part of element is visible
+                    } else {
+                        // whole part of element is visible
                         $(this).find('.ribbon').css('opacity', 1);
+                        $(this).find('.ribbon').css({
+                            left: "0px"
+                        });
                         bool1 = false;
-                    } else {
-                        $(this).find('.ribbon').css('opacity', 1);
-                        $(this).find('.ribbon').css({
-                            left: "0px"
-                        });
                     }
-                } else if (visiblePartY == 'bottom') {
-                    //$(this).css('opacity', 0.5);
-                    if (bool1) {
-                        $(this).find('.ribbon').animate({
-                            left: "0px"
-                        }, 1500);
-                        $(this).find('.ribbon').css('opacity', 1);
-                        bool1 = false;
-                    } else {
-                        $(this).find('.ribbon').css('opacity', 1);
-                        $(this).find('.ribbon').css({
-                            left: "0px"
-                        });
-                    }
-                    // bottom part of element is visible
-                } else {
-                    // whole part of element is visible
-                    $(this).find('.ribbon').css('opacity', 1);
-                    $(this).find('.ribbon').css({
-                        left: "0px"
-                    });
-                    bool1 = false;
                 }
-            }
-            // element has gone out of viewport
+                // element has gone out of viewport
 
-        });
-        $('.neko2').find('.ribbon').css('opacity', 0);
-        $('.neko2').bind('inview', function (event, isInView, visiblePartX, visiblePartY) {
-            $(this).find('.ribbon').css({
-                left: "-1500px"
             });
-            if (isInView) {
+            $('.neko2').find('.ribbon').css('opacity', 0);
+            $('.neko2').bind('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                $(this).find('.ribbon').css({
+                    left: "-1500px"
+                });
+                if (isInView) {
 
-                // element is now visible in the viewport
-                if (visiblePartY == 'top') {
-                    // top part of element is visible
+                    // element is now visible in the viewport
+                    if (visiblePartY == 'top') {
+                        // top part of element is visible
 
-                    if (bool2) {
-                        $(this).find('.ribbon').animate({
-                            left: "0px"
-                        }, 1500);
-                        $(this).find('.ribbon').css('opacity', 1);
-                        bool2 = false;
+                        if (bool2) {
+                            $(this).find('.ribbon').animate({
+                                left: "0px"
+                            }, 1500);
+                            $(this).find('.ribbon').css('opacity', 1);
+                            bool2 = false;
+                        } else {
+                            $(this).find('.ribbon').css('opacity', 1);
+                            $(this).find('.ribbon').css({
+                                left: "0px"
+                            });
+                        }
+
+                    } else if (visiblePartY == 'bottom') {
+
+                        if (bool2) {
+                            $(this).find('.ribbon').animate({
+                                left: "0px"
+                            }, 1500);
+                            $(this).find('.ribbon').css('opacity', 1);
+                            bool2 = false;
+                        } else {
+                            $(this).find('.ribbon').css('opacity', 1);
+                            $(this).find('.ribbon').css({
+                                left: "0px"
+                            });
+                        }
+                        // bottom part of element is visible
                     } else {
+                        // whole part of element is visible
                         $(this).find('.ribbon').css('opacity', 1);
                         $(this).find('.ribbon').css({
                             left: "0px"
                         });
-                    }
-
-                } else if (visiblePartY == 'bottom') {
-
-                    if (bool2) {
-                        $(this).find('.ribbon').animate({
-                            left: "0px"
-                        }, 1500);
-                        $(this).find('.ribbon').css('opacity', 1);
                         bool2 = false;
-                    } else {
-                        $(this).find('.ribbon').css('opacity', 1);
-                        $(this).find('.ribbon').css({
-                            left: "0px"
-                        });
                     }
-                    // bottom part of element is visible
-                } else {
-                    // whole part of element is visible
-                    $(this).find('.ribbon').css('opacity', 1);
-                    $(this).find('.ribbon').css({
-                        left: "0px"
-                    });
-                    bool2 = false;
                 }
-            }
-        });
+            });
+        }
     </script>
-
 </body>
 
 </html>

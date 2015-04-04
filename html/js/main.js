@@ -1,3 +1,20 @@
+/**
+ *  ユーザーのデバイスを返す
+ *
+ *  @return     スマホ(sp)、タブレット(tab)、その他(other)
+ *
+ */
+var getDevice = (function () {
+    var ua = navigator.userAgent;
+    if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+        return 'sp';
+    } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+        return 'tab';
+    } else {
+        return 'other';
+    }
+})();
+
 // forked from Event's "Web Creator's Contest Q the 2nd【vol.2】エントリー用コード" http://jsdo.it/Event/zojr
 // 要素のキャッシュ
 var sections = $('section');
@@ -35,23 +52,27 @@ var lists = $('nav li').on('click', function (event) {
 	// エフェクト用にindexを保持
 	var from_idx = sections.filter('.active').removeClass('active').index();
 	self.addClass('active');
-    // KEEP OUTのアニメーションを開始
-    //ifの判定で色を付ける　keepPlusSがデフォルト
-    if(href=='#team'){
-        $('.keepout').addClass('keepPlusT');
-	}else if(href=='#service'){
-        $('.keepout').addClass('keepPlusS');
-    }else if(href=='#portfolio'){
-        $('.keepout').addClass('keepPlusP');
-    }else if(href=='#BBS'){
-        $('.keepout').addClass('keepPlusB');
-    }else if(href=='#contact'){
-        $('.keepout').addClass('keepPlusC');
-    }else{
-        $('.keepout').addClass('keepPlusS');
-    }
     
-	$('.keepout').addClass('keepout-anime');
+    // スマホ以外の場合、アニメーション動作
+    if (getDevice != 'sp'){
+        // KEEP OUTのアニメーションを開始
+        //ifの判定で色を付ける　keepPlusSがデフォルト
+        if(href=='#team'){
+            $('.keepout').addClass('keepPlusT');
+        }else if(href=='#service'){
+            $('.keepout').addClass('keepPlusS');
+        }else if(href=='#portfolio'){
+            $('.keepout').addClass('keepPlusP');
+        }else if(href=='#BBS'){
+            $('.keepout').addClass('keepPlusB');
+        }else if(href=='#contact'){
+            $('.keepout').addClass('keepPlusC');
+        }else{
+            $('.keepout').addClass('keepPlusS');
+        }
+
+        $('.keepout').addClass('keepout-anime');
+    }
 	// 遷移エフェクトの実行
 	sections.pageChange(from_idx, self.index());
 });
@@ -173,8 +194,13 @@ $('.keepout').each(function (index, element) {
     //    }, 300);
     }
     
-	init();
-	draw();
+    // スマホ以外の場合、アニメーション動作
+    if (getDevice != 'sp'){
+        init();
+        draw();
+    } else {
+        showPage();
+    }
 
 })();
 //portfolio用のscript
