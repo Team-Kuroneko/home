@@ -131,6 +131,7 @@ section >  div{
 	-webkit-animation: role linear 0.5s/**/ 2 alternate;
 }
 
+
 /* JavaScriptでランダムにしたほうが面白みがあったかなー？ */
 /* nth-childでやると何故か適用されないのでidを付加        */
 /* ワタクシ、CSS力が低いのですよ                          */

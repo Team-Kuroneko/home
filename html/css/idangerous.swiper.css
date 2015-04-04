@@ -549,7 +549,14 @@ width:100%;
     background-color: white;
 
 }
-.swiper-slide .Team, .swiper-slide .master_name,.swiper-slide .zyun_name,.swiper-slide .gin_name{
+      #fc2_footer{
+    display: none;
+    
+    }    
+
+
+@media (min-width: 50em) {
+    .swiper-slide .Team, .swiper-slide .master_name,.swiper-slide .zyun_name,.swiper-slide .gin_name{
 height: 100%;
 opacity: 1;
       -webkit-transition: 1000ms;
@@ -608,18 +615,89 @@ transform: scale(1);
 
 }
 
-@media (min-width: 50em) {
 
 }@media (min-width: 50em) and (max-width: 61.250em) {
 /* The "tablet" and "mobile" version */
 } @media (max-width: 49.938em) {
+    
    
 /* CSS specific to the 2x3 columns version */
 } @media (min-width:32.5em) and (max-width: 49.938em) {
 /* Adapting the font size and width for smaller screns*/
-  
-} @media (min-width: 17em) and (max-width: 32.438em){
+.swiper-slide .Team, .swiper-slide .master_name,.swiper-slide .zyun_name,.swiper-slide .gin_name{
+height: 100%;
+opacity: 1;
+
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1);
+}
+.swiper-slide-visible .Team, .swiper-slide-visible .master_name,.swiper-slide-visible .zyun_name,.swiper-slide-visible .gin_name{
+opacity: 0.7;
+-webkit-transform: scale(0.6);
+-moz-transform: scale(0.6);
+-ms-transform: scale(0.6);
+-o-transform: scale(0.6);
+transform: scale(0.6);
     
+}
+
+.swiper-slide-active .Team, .swiper-slide-active .master_name,.swiper-slide-active .zyun_name,.swiper-slide-active .gin_name {
+
+opacity: 1;
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1);
+
+}
+
+.swiper-slide-active .master_name{
+   -moz-animation-name: bg;
+ -moz-animation-duration: 0.5s;
+ -moz-animation-timing-function: ease-in;
+ -moz-animation-iteration-count: 1;
+
+ -webkit-animation-name:  bg;
+ -webkit-animation-duration: 0.5s;
+ -webkit-animation-timing-function: ease-in;
+ -webkit-animation-iteration-count: 1;
+
+ -o-animation-name: bg;
+ -o-animation-duration: 0.5s;
+ -o-animation-timing-function: ease-in;
+ -o-animation-iteration-count: 1;
+
+ -ms-animation-name: bg;
+ -ms-animation-duration: 0.5s;
+ -ms-animation-timing-function: ease-in;
+ -ms-animation-iteration-count: 1;
+
+}
+} @media (max-width:32.438){
+    
+
+} @media (min-width: 17em) and (max-width: 32.438em){
+     .swiper-slide .Team, .swiper-slide .master_name,.swiper-slide .zyun_name,.swiper-slide .gin_name{
+height: 100%;
+opacity: 1;
+}
+.swiper-slide-visible .Team, .swiper-slide-visible .master_name,.swiper-slide-visible .zyun_name,.swiper-slide-visible .gin_name{
+    
+}
+
+.swiper-slide-active .Team, .swiper-slide-active .master_name,.swiper-slide-active .zyun_name,.swiper-slide-active .gin_name {
+
+opacity: 1;
+
+}
+
+.swiper-slide-active .master_name{
+}
+
 .silver{
  margin-top: 30px;
 margin-right: 1em;
@@ -632,6 +710,7 @@ padding-top: 0px;
     display: none;
     
     }
+  
 .arrow_box {
 	position: relative;
     margin: 0 0 1.5em;
@@ -714,6 +793,22 @@ border-radius: 16px;
 
 
 }@media (max-width: 17em){
+     .swiper-slide .Team, .swiper-slide .master_name,.swiper-slide .zyun_name,.swiper-slide .gin_name{
+height: 100%;
+opacity: 1;
+}
+.swiper-slide-visible .Team, .swiper-slide-visible .master_name,.swiper-slide-visible .zyun_name,.swiper-slide-visible .gin_name{
+    
+}
+
+.swiper-slide-active .Team, .swiper-slide-active .master_name,.swiper-slide-active .zyun_name,.swiper-slide-active .gin_name {
+opacity: 1;
+
+}
+
+.swiper-slide-active .master_name{
+}
+
     .silver{
   margin-top: 30px;
   margin-right: 1em;
@@ -730,6 +825,7 @@ padding-top: 0px;
     display: none;
     
     }    
+ 
     
 img.zyun2{
     margin: 0 auto;
